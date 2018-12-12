@@ -1,0 +1,10 @@
+.company-nav {
+  @include reset-list;
+}
+
+.company-nav__link {
+  color: rgba(108, 153, 217, 0.8);
+  font-size: 14px;
+  line-height: 26px;
+  font-weight: 400;
+}

@@ -1,0 +1,16 @@
+.prod-nav {
+  @include reset-list;
+}
+
+.prod-nav__link {
+  color: rgba(126, 173, 235, 0.8);
+  font-size: 14px;
+  line-height: 26px;
+  font-weight: 400;
+}
+
+@media (min-width: $min-desktop-width) {
+  .prod-nav {
+    display: none;
+  }
+}

@@ -1,0 +1,59 @@
+.offer {
+  background-color: #d7dce7;
+}
+
+.offer__title {
+  display: inline;
+  color: #041e51;
+  font-size: 20px;
+  line-height: 24px;
+  font-weight: 500;
+  background-color: #f7e900;
+
+}
+
+.offer__title-wrapper {
+  padding: 36px 130px 20px 16px;
+  background-image: url("../img/wifi-mobile.jpg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+}
+
+.offer__desc {
+  color: #323232;
+  font-size: 14px;
+  line-height: 18px;
+  font-weight: 300;
+}
+
+.offer__button {
+  color: #f0f2f9;
+  font-size: 13px;
+  line-height: 14px;
+  font-weight: 400;
+  background-color: #103885;
+}
+
+@media (min-width: $min-desktop-width) {
+  .offer__title {
+    color: #123885;
+    font-size: 34px;
+    line-height: 36px;
+    font-weight: 700;
+    background-color: #fff200;
+  }
+
+  .offer__desc {
+    font-size: 16px;
+    line-height: 20px;
+  }
+
+  .offer__button {
+    color: #123885;
+    font-size: 18px;
+    line-height: 22px;
+    font-weight: 700;
+    background-color: transparent;
+    border: 3px solid #123885;
+  }
+}

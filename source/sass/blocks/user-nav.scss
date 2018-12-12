@@ -1,0 +1,53 @@
+.user-nav {
+  @include reset-list;
+}
+
+.user-nav__link {
+  position: relative;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 34px;
+    height: 34px;
+    border: 2px solid #eeeeee;
+    border-radius: 50%;
+  }
+
+  &:hover::before,
+  &:focus::before,
+  &:active::before {
+    border-color: #fff200;
+    background-color: #fff200;
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    background-image: url('../img/icon-sprite.png');
+    background-repeat: no-repeat;
+    background-position: 0 0;
+  }
+
+  &--user::after {
+    width: 17px;
+    height: 19px;
+    background-position: -10px -210px;
+  }
+
+  &--fb::after {
+    width: 20px;
+    height: 21px;
+    background-position: -10px -151px;
+  }
+
+  &--search::after {
+    width: 18px;
+    height: 18px;
+    background-position: -10px -182px;
+  }
+}

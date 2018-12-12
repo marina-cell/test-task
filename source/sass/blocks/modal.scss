@@ -1,0 +1,37 @@
+.modal__header {
+  color: #003588;
+  font-size: 16px;
+  line-height: 16px;
+  font-weight: 500;
+}
+
+.modal__list {
+  @include reset-list;
+}
+
+.modal__tab {
+  color: #123885;
+  font-size: 12px;
+  line-height: 12px;
+  font-weight: 400;
+  background-color: #ffffff;
+
+  &--active {
+    color: #ffffff;
+    background-color: #123885;
+  }
+}
+
+@media (min-width: $min-desktop-width) {
+  .modal__header {
+    color: #123885;
+    font-size: 26px;
+    line-height: 30px;
+    font-weight: 700;
+  }
+
+  .modal__tab {
+    font-size: 14px;
+    line-height: 14px;
+  }
+}

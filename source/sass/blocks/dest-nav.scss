@@ -1,0 +1,23 @@
+.dest-nav {
+  @include reset-list;
+}
+
+.dest-nav__link {
+  color: rgba(255, 255, 255, 0.2);
+  font-size: 16px;
+  line-height: 16px;
+  font-weight: 500;
+
+  &--active {
+    color: #ffffff;
+    border-bottom: 4px solid #fff200;
+  }
+}
+
+@media (min-width: $min-desktop-width) {
+  .dest-nav__link {
+    font-size: 20px;
+    line-height: 20px;
+    font-weight: 700;
+  }
+}

@@ -1,0 +1,22 @@
+.site-nav {
+  @include reset-list;
+}
+
+.site-nav__link {
+  color: #fcfdff;
+  font-size: 16px;
+  line-height: 46px;
+  font-weight: 500;
+
+  &--active {
+    color: #fef201;
+  }
+}
+
+@media (min-width: $min-desktop-width) {
+  .dest-nav__link {
+    font-size: 15px;
+    line-height: 18px;
+    font-weight: 400;
+  }
+}

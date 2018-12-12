@@ -1,5 +1,21 @@
 @import "normalize.scss";
-
-body {
-  color: red;
-}
+@import "global/fonts.scss";
+@import "global/variables.scss";
+@import "global/mixins.scss";
+@import "global/global.scss";
+@import "blocks/button.scss";
+@import "blocks/page-header.scss";
+@import "blocks/promo.scss";
+@import "blocks/slider.scss";
+@import "blocks/offers.scss";
+@import "blocks/offer.scss";
+@import "blocks/news.scss";
+@import "blocks/main-nav.scss";
+@import "blocks/dest-nav.scss";
+@import "blocks/site-nav.scss";
+@import "blocks/user-nav.scss";
+@import "blocks/prod-nav.scss";
+@import "blocks/company-nav.scss";
+@import "blocks/city.scss";
+@import "blocks/modal.scss";
+@import "blocks/form.scss";

@@ -4,9 +4,220 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>ПРОСТО Телеком</title>
+  <link rel="preload" href="fonts/Roboto-Regular.woff2" as="font">
+  <link rel="preload" href="fonts/Roboto-Bold.woff2" as="font">
   <link href="css/style.min.css" rel="stylesheet">
 </head>
 <body>
-  Hello, world!
+  <header class="page-header">
+    <div class="page-header__logo">
+      <img src="img/logo.png" width="162" height="39" alt="Логотип организации ПРОСТО Телеком">
+    </div>
+    <nav class="main-nav">
+      <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть или закрыть меню</span></button>
+      <ul class="main-nav__dest-list dest-nav">
+        <li class="dest-nav__item"><a class="dest-nav__link" href="#">Для дома</a></li>
+        <li class="dest-nav__item"><a class="dest-nav__link dest-nav__link--active" href="#">Для бизнеса</a></li>
+      </ul>
+      <ul class="main-nav__site-list site-nav">
+        <li class="site-nav__item"><a class="site-nav__link site-nav__link--active" href="#">Продукты и услуги</a>
+          <ul class="site-nav__prod-list prod-nav">
+            <li class="prod-nav__item"><a class="prod-nav__link" href="#">Интернет</a></li>
+            <li class="prod-nav__item"><a class="prod-nav__link" href="#">Телефония</a></li>
+            <li class="prod-nav__item"><a class="prod-nav__link" href="#">Каналы передачи данных</a></li>
+          </ul>
+        </li>
+        <li class="site-nav__item"><a class="site-nav__link" href="#">Решения</a></li>
+        <li class="site-nav__item"><a class="site-nav__link" href="#">Облачные сервисы</a></li>
+      </ul>
+      <ul class="main-nav__company-list company-nav">
+        <li class="company-nav__item"><a class="company-nav__link" href="#">О компании</a></li>
+        <li class="company-nav__item"><a class="company-nav__link" href="#">Новости</a></li>
+        <li class="company-nav__item"><a class="company-nav__link" href="#">Вакансии</a></li>
+        <li class="company-nav__item"><a class="company-nav__link" href="#">Контакты</a></li>
+      </ul>
+    <ul class="main-nav__user-list user-nav">
+      <li class="user-nav__item"><a class="user-nav__link user-nav__link--user" href="#"><span class="visually-hidden">Личный кабинет</span></a></li>
+      <li class="user-nav__item"><a class="user-nav__link user-nav__link--fb" href="#"><span class="visually-hidden">Обратная связь</span></a></li>
+      <li class="user-nav__item"><a class="user-nav__link user-nav__link--search" href="#"><span class="visually-hidden">Поиск</span></a></li>
+    </ul>
+    </nav>
+    <div class="city">
+      <a class="city__choice" href="#">Санкт-Петербург</a>
+      <div class="city__tel">+7 (812) 366 40 40</div>
+    </div>
+  </header>
+  <main class="page-main">
+    <h1 class="visually-hidden">Сайт компании "ПРОСТО Телеком"</h1>
+    <section class="page-main__promo promo">
+      <h2 class="promo__header">Малый бизнес</h2>
+      <p class="promo__slogan">от идеи до воплощения 3 дня</p>
+      <div class="slider">
+        <button class="slider__button slider__button--prev"><span class="visually-hidden">Предыдущий слайд</span></button>
+        <button class="slider__button slider__button--next"><span class="visually-hidden">Следующий слайд</span></button>
+        <ol class="slider__radio-list">
+          <li class="slider__radio-item"><button></button></li>
+          <li class="slider__radio-item"><button></button></li>
+          <li class="slider__radio-item"><button></button></li>
+          <li class="slider__radio-item"><button></button></li>
+        </ul>
+      </div>
+    </section>
+    <section class="page-main__offers offers">
+      <h2 class="offers__header">Выгодные предложения для различных направлений бизнеса:</h2>
+      <ul class="offers__list">
+        <li class="offers__item offers__item--retail"><a class="offers__link" href="#">Ритейл</a></li>
+        <li class="offers__item offers__item--wifi offers__item--active"><a class="offers__link offers__link--active" href="#">Организация Wi FI зон</a></li>
+        <li class="offers__item offers__item--call-centers"><a class="offers__link" href="#">Call центры</a></li>
+        <li class="offers__item offers__item--logistics"><a class="offers__link" href="#">Логистика</a></li>
+      </ul>
+      <article class="offers__detailed offer offer--wifi">
+        <div class="offer__title-wrapper">
+          <h3 class="offer__title">Удобный интернет-серфинг в общественных местах</h3>
+        </div>
+        <p class="offer__desc">Зоны свободного доступа в интернет для посетителей кафе, ресторанов, салонов красоты и других заведений</p>
+        <a href="#" class="offer__button button">Запросить коммерческое предложение</a>
+      </article>
+    </section>
+    <section class="news">
+      <h2 class="visually-hidden">Новости и публикации</h2>
+      <a class="news__tab news__tab--active" href="#">Новости</a>
+      <a class="news__tab" href="#">Публикации</a>
+      <div class="news__wrapper">
+        <ul class="news__list">
+          <li class="news__item">
+            <article class="news-item">
+              <h3 class="news-item__header">«ПРОСТО Телеком» приступает к оказанию услуг телефонии в Пензе</h3>
+              <p class="news-item__text">Корпоративные клиенты в Пензе теперь могут приобрести городские телефонные номера у оператора связи "ПРОСТО Телеком"</p>
+              <time class="news-item__date" datetime="2014-11-07">7 ноября 2014</time>
+            </article>
+          </li>
+          <li class="news__item">
+            <article class="news-item">
+              <h3 class="news-item__header">Компания «ПРОСТО Телеком» отмечает свой день рождения</h3>
+              <p class="news-item__text">17 лет назад в Петербурге была основана компания "ПРОСТО Телеком". За эти годы компания  из небольшого интернет-провайдера превратилась в универсального оператора связи федерального масштаба.</p>
+              <time class="news-item__date" datetime="2014-11-14">14 ноября 2014</time>
+            </article>
+          </li>
+          <li class="news__item">
+            <article class="news-item">
+              <h3 class="news-item__header">Осенью подключение пакета «Интернет + Телефон» бесплатно!</h3>
+              <p class="news-item__text">С 15 сентября корпоративные клиенты в Пензе могут бесплатно подключить пакет "Интернет + Телефон"</p>
+              <time class="news-item__date" datetime="2014-11-21">21 ноября 2014</time>
+            </article>
+          </li>
+        </ul>
+        <button class="news__button button">Еще новости</button>
+      </div>
+    </section>
+    <section class="modal-login modal">
+      <h2 class="modal__header">Личный кабинет</h2>
+      <ul class="modal__list">
+        <li class="modal__item"><a class="modal__tab" href="#">Регистрация</a></li>
+        <li class="modal__item"><a class="modal__tab modal__tab--active" href="#">Авторизация</a></li>
+      </ul>
+      <form class="modal-login__form form" action="https://echo.htmlacademy.ru" method="post">
+        <p class="form__item">
+          <label class="visually-hidden" for="username">Имя</label>
+          <input class="form__input" id="username" type="text" name="username" placeholder="Имя">
+        </p>
+        <p class="form__item">
+          <label class="visually-hidden" for="surname">Имя</label>
+          <input class="form__input" id="surname" type="text" name="surname" placeholder="Фамилия">
+        </p>
+        <p class="form__item">
+          <label class="visually-hidden" for="email">Электронная почта</label>
+          <input class="form__input" id="email" type="email" name="email" placeholder="Электронная почта">
+        </p>
+        <p class="form__item">
+          <label class="visually-hidden" for="tel">Телефон</label>
+          <input class="form__input" id="tel" type="tel" name="tel" placeholder="Телефон">
+        </p>
+        <p class="form__item">
+          <label class="visually-hidden" for="password">Пароль</label>
+          <input class="form__input" id="password" type="password" name="password" placeholder="Пароль">
+        </p>
+        <p class="form__item">
+          <label class="visually-hidden" for="confirm">Подтвердите пароль</label>
+          <input class="form__input" id="confirm" type="password" name="confirm" placeholder="Подтвердите пароль">
+        </p>
+        <button class="form__button button" type="submit">Зарегистрироваться</button>
+      </form>
+    </section>
+    <section class="modal-feedback modal">
+      <h2 class="modal__header">Обратная связь</h2>
+      <ul class="modal__list">
+        <li class="modal__item"><a class="modal__tab" href="#">Частный клиент</a></li>
+        <li class="modal__item"><a class="modal__tab" href="#">Юридическое лицо</a></li>
+        <li class="modal__item"><a class="modal__tab" href="#">Промо-офис</a></li>
+      </ul>
+      <form class="modal-feedback__form form" action="https://echo.htmlacademy.ru" method="post">
+        <div class="container">
+          <fieldset class="form__field">
+            <legend class="visually-hidden">Данные клиента</legend>
+            <p class="form__item">
+              <label class="visually-hidden" for="user-name">Фамилия, имя, отчество</label>
+              <input class="form__input" id="user-name" type="text" name="user-name" placeholder="Фамилия, Имя, Отчество">
+            </p>
+            <p class="form__item">
+              <label class="visually-hidden" for="user-tel">Номер телефона</label>
+              <input class="form__input" id="user-tel" type="tel" name="user-tel" placeholder="Номер телефона">
+            </p>
+            <p class="form__item">
+              <label class="visually-hidden" for="user-email">Электронный адрес</label>
+              <input class="form__input" id="user-email" type="email" name="user-email" placeholder="email@email.ru">
+            </p>
+          </fieldset>
+        </div>
+        <div class="container">
+          <fieldset class="form__field">
+            <legend class="form__legend">Адрес подключения услуги</legend>
+            <p class="form__item">
+              <label class="visually-hidden" for="user-town">Город</label>
+              <input class="form__input form__input--address" id="user-town" type="text" name="user-town" placeholder="Санкт-Петербург" value="Санкт-Петербург">
+            </p>
+            <p class="form__item">
+              <label class="visually-hidden" for="user-street">Улица</label>
+              <input class="form__input" id="user-street" type="text" name="user-street" placeholder="Улица">
+            </p>
+            <p class="form__item">
+              <label class="visually-hidden" for="user-house">Номер дома</label>
+              <input class="form__input" id="user-house" type="number" name="user-house" placeholder="Номер дома">
+            </p>
+            <p class="form__item">
+              <label class="visually-hidden" for="user-apartment">Квартира</label>
+              <input class="form__input" id="user-apartment" type="number" name="user-apartment" placeholder="Квартира">
+            </p>
+          </fieldset>
+        </div>
+        <div class="container">
+          <fieldset class="form__field">
+            <legend class="visually-hidden">Обращение</legend>
+            <p class="form__item">
+              <label class="form__label" for="message-type">Тип обращения</label>
+              <select class="form__select" name="message-type" id="message-type">
+                <option class="form__option form__option--default" value="message-type-default" disabled selected>Выберите тип услуги:</option>
+                <option class="form__option" value="message-type-internet">Интернет</option>
+                <option class="form__option" value="message-type-tel">Телефония</option>
+                <option class="form__option" value="message-type-chann">Каналы передачи данных</option>
+              </select>
+            </p>
+            <p class="form__item">
+              <label class="form__label" for="message-theme">Тема обращения</label>
+              <select class="form__select" name="message-theme" id="message-theme">
+                <option class="form__option form__option--default" value="message-theme-default" disabled selected>Выберите наиболее подходящую тему</option>
+              </select>
+            </p>
+            <p class="form__item">
+              <label class="visually-hidden" for="message-text">Текст обращения</label>
+              <textarea class="form__text" id="message-text"></textarea>
+            </p>
+          </fieldset>
+        </div>
+        <b class="form__notice">Все поля обязательны для заполнения</b>
+        <button class="form__button form__button--feedback button" type="submit">Отправить</button>
+      </form>
+    </section>
+  </main>
 </body>
 </html>

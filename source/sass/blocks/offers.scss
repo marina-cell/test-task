@@ -1,0 +1,96 @@
+.offers {
+  background-color: #eff2f9;
+}
+
+.offers__list {
+  @include reset-list;
+}
+
+.offers__header {
+  color: #002672;
+  font-size: 16px;
+  line-height: 16px;
+  font-weight: 700;
+}
+
+.offers__item {
+  position: relative;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 62px;
+    height: 62px;
+    background-color: #123885;
+    border-radius: 50%;
+  }
+
+  &--active::before {
+    background-color: #fff200;
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    background-image: url('../img/icon-sprite.png');
+    background-repeat: no-repeat;
+    background-position: 0 0;
+  }
+
+  &--retail::after {
+    width: 35px;
+    height: 30px;
+    background-position: -10px -71px;
+  }
+
+  &--wifi::after {
+    width: 37px;
+    height: 27px;
+    background-position: -10px -34px;
+  }
+
+  &--call-centers::after {
+    width: 30px;
+    height: 30px;
+    background-position: -10px -111px;
+  }
+
+  &--logistics::after {
+    width: 41px;
+    height: 24px;
+    background-position: -10px -0px;
+  }
+}
+
+.offers__link {
+  color: #6e6e6e;
+  font-size: 13px;
+  line-height: 16px;
+  font-weight: 300;
+
+  &--active {
+    color: #123885;
+  }
+}
+
+@media (min-width: $min-desktop-width) {
+  .offers__header {
+    font-size: 36px;
+    line-height: 38px;
+    font-weight: 700;
+  }
+
+  .offers__link {
+    font-size: 18px;
+    line-height: 40px;
+    border-bottom: 1px dotted #c9c9c9;
+
+    &--active {
+      border-bottom: none;
+    }
+  }
+}

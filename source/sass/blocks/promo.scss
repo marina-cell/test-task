@@ -1,0 +1,42 @@
+.promo {
+  height: 53px;
+  background-color: #43464d;
+  background-image: url("../img/promo-mobile.jpg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+}
+
+.promo__header {
+  color: #eff2f9;
+  font-size: 18px;
+  line-height: 47px;
+  font-weight: 700;
+}
+
+.promo__slogan {
+  color: #ffffff;
+  font-size: 11px;
+  line-height: 12px;
+  font-weight: 100;
+}
+
+@media (min-width: $min-desktop-width) {
+  .promo {
+    min-height: 590px;
+    background-image: url("../img/promo.jpg");
+    background-position: center -120px;
+    background-size: cover;
+  }
+
+  .promo__header {
+    font-size: 83px;
+    line-height: 67px;
+    font-weight: 700;
+  }
+
+  .promo__slogan {
+    font-size: 21px;
+    line-height: 23px;
+    font-weight: 100;
+  }
+}
