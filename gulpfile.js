@@ -93,6 +93,7 @@ gulp.task("server", function () {
 
   gulp.watch("source/sass/**/*.{scss,sass}", gulp.series("css"));
   gulp.watch("source/*.html", gulp.series("html", "refresh"));
+  gulp.watch("source/**/*.{woff,woff2,png,jpg,js}", gulp.series("copy", "refresh"));
 });
 
 gulp.task("start", gulp.series("build", "server"));

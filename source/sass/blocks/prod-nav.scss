@@ -7,6 +7,12 @@
   font-size: 14px;
   line-height: 26px;
   font-weight: 400;
+
+  &:hover,
+  &:focus,
+  &:active {
+    color: rgba(254, 242, 1, 0.8);
+  }
 }
 
 @media (min-width: $min-desktop-width) {

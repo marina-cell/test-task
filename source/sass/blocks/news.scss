@@ -1,3 +1,16 @@
+.news {
+  padding: 42px 32px 20px 22px;
+}
+
+.news__switch {
+  display: flex;
+  justify-content: space-between;
+  width: 180px;
+  margin: 0 auto;
+  margin-bottom: 26px;
+  text-align: center;
+}
+
 .news__tab {
   color: #c0c0c0;
   font-size: 16px;
@@ -15,7 +28,18 @@
   @include reset-list;
 }
 
+.news__item {
+  display: none;
+
+  &:nth-child(2) {
+    display: block;
+  }
+}
+
 .news-item__header {
+  margin: 0;
+  margin-bottom: 5px;
+  padding: 0;
   color: #123885;
   font-size: 16px;
   line-height: 18px;
@@ -23,6 +47,9 @@
 }
 
 .news-item__text {
+  margin: 0;
+  margin-bottom: 10px;
+  padding: 0;
   color: #343434;
   font-size: 14px;
   line-height: 18px;
@@ -30,6 +57,8 @@
 }
 
 .news-item__date {
+  margin: 0;
+  padding: 0;
   color: #c0c0c0;
   font-size: 12px;
   line-height: 16px;

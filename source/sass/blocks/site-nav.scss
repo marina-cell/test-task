@@ -2,6 +2,45 @@
   @include reset-list;
 }
 
+.site-nav__item {
+  position: relative;
+  padding: 3px 0;
+  border-bottom: 1px solid rgba(126, 173, 235, 0.2);
+}
+
+.site-nav__toggle {
+  content: "";
+  position: absolute;
+  top: 17px;
+  left: 228px;
+  width: 20px;
+  height: 20px;
+  background-color: transparent;
+  border-radius: 50%;
+  cursor: pointer;
+
+  &::before,
+  &::after {
+    content: "";
+    position: absolute;
+    top: 8px;
+    left: 4px;
+    width: 7px;
+    height: 2px;
+    background-color: #ffffff;
+  }
+
+  &::before {
+    transform: rotate(45deg);
+  }
+
+  &::after {
+    // top: 8px;
+    left: 8px;
+    transform: rotate(-45deg);
+  }
+}
+
 .site-nav__link {
   color: #fcfdff;
   font-size: 16px;
@@ -10,6 +49,18 @@
 
   &--active {
     color: #fef201;
+  }
+
+  &--active + .site-nav__toggle::before {
+    background-color: #fef201;
+    top: 7px;
+    left: 8px;
+  }
+
+  &--active + .site-nav__toggle::after {
+    top: 7px;
+    left: 4px;
+    background-color: #fef201;
   }
 }
 

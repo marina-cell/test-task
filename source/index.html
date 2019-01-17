@@ -13,39 +13,46 @@
     <div class="page-header__logo">
       <img src="img/logo.png" width="162" height="39" alt="Логотип организации ПРОСТО Телеком">
     </div>
-    <nav class="main-nav">
+    <nav class="main-nav main-nav--closed main-nav--nojs">
       <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть или закрыть меню</span></button>
-      <ul class="main-nav__dest-list dest-nav">
-        <li class="dest-nav__item"><a class="dest-nav__link" href="#">Для дома</a></li>
-        <li class="dest-nav__item"><a class="dest-nav__link dest-nav__link--active" href="#">Для бизнеса</a></li>
-      </ul>
-      <ul class="main-nav__site-list site-nav">
-        <li class="site-nav__item"><a class="site-nav__link site-nav__link--active" href="#">Продукты и услуги</a>
-          <ul class="site-nav__prod-list prod-nav">
-            <li class="prod-nav__item"><a class="prod-nav__link" href="#">Интернет</a></li>
-            <li class="prod-nav__item"><a class="prod-nav__link" href="#">Телефония</a></li>
-            <li class="prod-nav__item"><a class="prod-nav__link" href="#">Каналы передачи данных</a></li>
-          </ul>
-        </li>
-        <li class="site-nav__item"><a class="site-nav__link" href="#">Решения</a></li>
-        <li class="site-nav__item"><a class="site-nav__link" href="#">Облачные сервисы</a></li>
-      </ul>
-      <ul class="main-nav__company-list company-nav">
-        <li class="company-nav__item"><a class="company-nav__link" href="#">О компании</a></li>
-        <li class="company-nav__item"><a class="company-nav__link" href="#">Новости</a></li>
-        <li class="company-nav__item"><a class="company-nav__link" href="#">Вакансии</a></li>
-        <li class="company-nav__item"><a class="company-nav__link" href="#">Контакты</a></li>
-      </ul>
-    <ul class="main-nav__user-list user-nav">
-      <li class="user-nav__item"><a class="user-nav__link user-nav__link--user" href="#"><span class="visually-hidden">Личный кабинет</span></a></li>
-      <li class="user-nav__item"><a class="user-nav__link user-nav__link--fb" href="#"><span class="visually-hidden">Обратная связь</span></a></li>
-      <li class="user-nav__item"><a class="user-nav__link user-nav__link--search" href="#"><span class="visually-hidden">Поиск</span></a></li>
-    </ul>
+      <div class="main-nav__wrapper">
+        <ul class="main-nav__dest-list dest-nav">
+          <li class="dest-nav__item"><a class="dest-nav__link" href="#">Для дома</a></li>
+          <li class="dest-nav__item"><a class="dest-nav__link dest-nav__link--active" href="#">Для бизнеса</a></li>
+        </ul>
+        <ul class="main-nav__site-list site-nav">
+          <li class="site-nav__item"><a class="site-nav__link site-nav__link--active" href="#">Продукты и услуги</a>
+            <button class="site-nav__toggle" type="button"><span class="visually-hidden">Открыть или закрыть подменю</span></button>
+            <ul class="site-nav__prod-list prod-nav">
+              <li class="prod-nav__item"><a class="prod-nav__link" href="#">Интернет</a></li>
+              <li class="prod-nav__item"><a class="prod-nav__link" href="#">Телефония</a></li>
+              <li class="prod-nav__item"><a class="prod-nav__link" href="#">Каналы передачи данных</a></li>
+            </ul>
+          </li>
+          <li class="site-nav__item"><a class="site-nav__link" href="#">Решения</a>
+            <button class="site-nav__toggle" type="button"><span class="visually-hidden">Открыть или закрыть подменю</span></button>
+          </li>
+          <li class="site-nav__item"><a class="site-nav__link" href="#">Облачные сервисы</a>
+            <button class="site-nav__toggle" type="button"><span class="visually-hidden">Открыть или закрыть подменю</span></button>
+          </li>
+        </ul>
+        <ul class="main-nav__company-list company-nav">
+          <li class="company-nav__item"><a class="company-nav__link" href="#">О компании</a></li>
+          <li class="company-nav__item"><a class="company-nav__link" href="#">Новости</a></li>
+          <li class="company-nav__item"><a class="company-nav__link" href="#">Вакансии</a></li>
+          <li class="company-nav__item"><a class="company-nav__link" href="#">Контакты</a></li>
+        </ul>
+        <ul class="main-nav__user-list user-nav">
+          <li class="user-nav__item user-nav__item--user"><a class="user-nav__link user-nav__link--user" href="#"><span class="visually-hidden">Личный кабинет</span></a></li>
+          <li class="user-nav__item user-nav__item--fb"><a class="user-nav__link" href="#"><span class="visually-hidden">Обратная связь</span></a></li>
+          <li class="user-nav__item user-nav__item--search"><a class="user-nav__link" href="#"><span class="visually-hidden">Поиск</span></a></li>
+        </ul>
+      </div>
+      <div class="city">
+        <a class="city__choice" href="#">Санкт-Петербург</a>
+        <div class="city__tel">+7 (812) 366 40 40</div>
+      </div>
     </nav>
-    <div class="city">
-      <a class="city__choice" href="#">Санкт-Петербург</a>
-      <div class="city__tel">+7 (812) 366 40 40</div>
-    </div>
   </header>
   <main class="page-main">
     <h1 class="visually-hidden">Сайт компании "ПРОСТО Телеком"</h1>
@@ -75,14 +82,18 @@
         <div class="offer__title-wrapper">
           <h3 class="offer__title">Удобный интернет-серфинг в общественных местах</h3>
         </div>
-        <p class="offer__desc">Зоны свободного доступа в интернет для посетителей кафе, ресторанов, салонов красоты и других заведений</p>
-        <a href="#" class="offer__button button">Запросить коммерческое предложение</a>
+        <div class="offer__container">
+          <p class="offer__desc">Зоны свободного доступа в интернет для посетителей кафе, ресторанов, салонов красоты и других заведений</p>
+          <a href="#" class="offer__button button">Запросить коммерческое предложение</a>
+        </div>
       </article>
     </section>
     <section class="news">
       <h2 class="visually-hidden">Новости и публикации</h2>
-      <a class="news__tab news__tab--active" href="#">Новости</a>
-      <a class="news__tab" href="#">Публикации</a>
+      <div class="news__switch">
+        <a class="news__tab news__tab--active" href="#">Новости</a>
+        <a class="news__tab" href="#">Публикации</a>
+      </div>
       <div class="news__wrapper">
         <ul class="news__list">
           <li class="news__item">
@@ -111,6 +122,7 @@
       </div>
     </section>
     <section class="modal-login modal">
+      <button class="modal__close-button" type="button"><span class="visually-hidden">Закрыть</span></button>
       <h2 class="modal__header">Личный кабинет</h2>
       <ul class="modal__list">
         <li class="modal__item"><a class="modal__tab" href="#">Регистрация</a></li>
@@ -144,15 +156,15 @@
         <button class="form__button button" type="submit">Зарегистрироваться</button>
       </form>
     </section>
-    <section class="modal-feedback modal">
+    <section class="modal-feedback modal modal--closed">
       <h2 class="modal__header">Обратная связь</h2>
       <ul class="modal__list">
-        <li class="modal__item"><a class="modal__tab" href="#">Частный клиент</a></li>
-        <li class="modal__item"><a class="modal__tab" href="#">Юридическое лицо</a></li>
-        <li class="modal__item"><a class="modal__tab" href="#">Промо-офис</a></li>
+        <li class="modal__item"><a class="modal__tab modal__tab--feedback" href="#">Частный клиент</a></li>
+        <li class="modal__item"><a class="modal__tab modal__tab--feedback modal__tab--active" href="#">Юридическое лицо</a></li>
+        <li class="modal__item"><a class="modal__tab modal__tab--feedback" href="#">Промо-офис</a></li>
       </ul>
       <form class="modal-feedback__form form" action="https://echo.htmlacademy.ru" method="post">
-        <div class="container">
+        <div class="form__container">
           <fieldset class="form__field">
             <legend class="visually-hidden">Данные клиента</legend>
             <p class="form__item">
@@ -169,7 +181,7 @@
             </p>
           </fieldset>
         </div>
-        <div class="container">
+        <div class="form__container">
           <fieldset class="form__field">
             <legend class="form__legend">Адрес подключения услуги</legend>
             <p class="form__item">
@@ -190,7 +202,7 @@
             </p>
           </fieldset>
         </div>
-        <div class="container">
+        <div class="form__container">
           <fieldset class="form__field">
             <legend class="visually-hidden">Обращение</legend>
             <p class="form__item">
@@ -219,5 +231,6 @@
       </form>
     </section>
   </main>
+  <script src="js/script.js"></script>
 </body>
 </html>

@@ -1,26 +1,39 @@
 .offers {
+  padding-top: 42px;
   background-color: #eff2f9;
 }
 
-.offers__list {
-  @include reset-list;
-}
-
 .offers__header {
+  width: 200px;
+  margin: 0 auto;
   color: #002672;
   font-size: 16px;
   line-height: 16px;
   font-weight: 700;
+  text-align: center;
+}
+
+.offers__list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+
+  @include reset-list;
+  padding: 0 12px 0 10px;
+  margin-bottom: 15px;
 }
 
 .offers__item {
   position: relative;
+  width: 62px;
+  padding-top: 95px;
+  text-align: center;
 
   &::before {
     content: "";
     position: absolute;
-    top: 0px;
-    left: 0px;
+    top: 25px;
+    left: 0;
     width: 62px;
     height: 62px;
     background-color: #123885;
@@ -34,9 +47,9 @@
   &::after {
     content: "";
     position: absolute;
-    top: 0px;
-    left: 0px;
-    background-image: url('../img/icon-sprite.png');
+    top: 45px;
+    left: 12px;
+    background-image: url("../img/icon-sprite.png");
     background-repeat: no-repeat;
     background-position: 0 0;
   }
@@ -54,15 +67,19 @@
   }
 
   &--call-centers::after {
+    top: 40px;
+    left: 17px;
     width: 30px;
     height: 30px;
     background-position: -10px -111px;
   }
 
   &--logistics::after {
+    top: 45px;
+    left: 10px;
     width: 41px;
     height: 24px;
-    background-position: -10px -0px;
+    background-position: -10px 0;
   }
 }
 

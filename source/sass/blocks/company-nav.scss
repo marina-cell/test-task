@@ -1,10 +1,20 @@
 .company-nav {
+  display: flex;
+  flex-wrap: wrap;
+
   @include reset-list;
+
+  padding: 20px 0;
+}
+
+.company-nav__item {
+  border-right: 1px solid rgba(126, 173, 235, 0.2);
 }
 
 .company-nav__link {
+  margin: 0 7px;
   color: rgba(108, 153, 217, 0.8);
   font-size: 14px;
-  line-height: 26px;
+  line-height: 16px;
   font-weight: 400;
 }

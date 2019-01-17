@@ -1,9 +1,20 @@
 .city {
-  color: #ffffff;
+  // margin-left: auto;
+  // width: 300px;
+  display: block;
+  // padding: 18px 28px 0 28px;
+  // box-sizing: border-box;
+
+  color: red;//#ffffff;
   font-size: 14px;
   line-height: 19px;
   font-weight: 900;
-  background-color: #003588;
+  text-transform: uppercase;
+  // background-color: #003588;
+}
+
+.main-nav--closed .city {
+  display: none;
 }
 
 .city__choice {

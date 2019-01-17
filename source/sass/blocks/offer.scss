@@ -4,22 +4,25 @@
 
 .offer__title {
   display: inline;
+  margin: 0;
+  padding: 3px 0 6px;
   color: #041e51;
   font-size: 20px;
   line-height: 24px;
   font-weight: 500;
   background-color: #f7e900;
-
 }
 
 .offer__title-wrapper {
-  padding: 36px 130px 20px 16px;
+  padding: 40px 130px 28px 16px;
   background-image: url("../img/wifi-mobile.jpg");
   background-repeat: no-repeat;
   background-position: 0 0;
 }
 
 .offer__desc {
+  margin: 0;
+  margin-bottom: 25px;
   color: #323232;
   font-size: 14px;
   line-height: 18px;
@@ -27,11 +30,18 @@
 }
 
 .offer__button {
+  display: block;
+  padding: 10px 15px;
   color: #f0f2f9;
   font-size: 13px;
   line-height: 14px;
   font-weight: 400;
   background-color: #103885;
+  text-align: center;
+}
+
+.offer__container {
+  padding: 17px 31px 36px 24px;
 }
 
 @media (min-width: $min-desktop-width) {

@@ -34,13 +34,13 @@ input[type="radio"].visually-hidden {
   overflow: hidden;
 }
 
-.container {
-  width: $page-width;
-  margin: 0 auto;
-}
-
-@media (min-width: $desktop-width) {
-  .container {
-    width: $desktop-width;
-  }
-}
+// .container {
+//   width: $page-width;
+//   margin: 0 auto;
+// }
+//
+// @media (min-width: $desktop-width) {
+//   .container {
+//     width: $desktop-width;
+//   }
+// }

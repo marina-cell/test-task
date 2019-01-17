@@ -1,5 +1,5 @@
 .promo {
-  height: 53px;
+  padding: 10px 22px 8px;
   background-color: #43464d;
   background-image: url("../img/promo-mobile.jpg");
   background-repeat: no-repeat;
@@ -7,17 +7,24 @@
 }
 
 .promo__header {
+  margin: 0;
+  margin-bottom: 3px;
+  padding: 0;
   color: #eff2f9;
   font-size: 18px;
-  line-height: 47px;
+  line-height: 20px;
   font-weight: 700;
+  text-align: center;
 }
 
 .promo__slogan {
+  margin: 0;
+  padding: 0;
   color: #ffffff;
   font-size: 11px;
   line-height: 12px;
   font-weight: 100;
+  text-align: center;
 }
 
 @media (min-width: $min-desktop-width) {

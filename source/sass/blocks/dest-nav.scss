@@ -1,5 +1,13 @@
 .dest-nav {
+  display: flex;
+
   @include reset-list;
+
+  margin-bottom: 30px;
+}
+
+.dest-nav__item {
+  margin-right: 18px;
 }
 
 .dest-nav__link {

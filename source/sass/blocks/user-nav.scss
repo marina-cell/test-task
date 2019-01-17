@@ -1,18 +1,22 @@
 .user-nav {
+  display: flex;
+
   @include reset-list;
 }
 
-.user-nav__link {
+.user-nav__item {
   position: relative;
+  width: 62px;
+  height: 34px;
 
   &::before {
     content: "";
     position: absolute;
-    top: 0px;
-    left: 0px;
+    top: 0;
+    left: 0;
     width: 34px;
     height: 34px;
-    border: 2px solid #eeeeee;
+    border: 2px solid rgba(126, 173, 235, 0.2);
     border-radius: 50%;
   }
 
@@ -26,9 +30,9 @@
   &::after {
     content: "";
     position: absolute;
-    top: 0px;
-    left: 0px;
-    background-image: url('../img/icon-sprite.png');
+    top: 10px;
+    left: 10px;
+    background-image: url("../img/icon-sprite.png");
     background-repeat: no-repeat;
     background-position: 0 0;
   }
